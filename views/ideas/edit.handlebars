@@ -1,0 +1,16 @@
+
+<div class="card card-body ">
+<h3 class="text-center ">Edit Video Idea</h3>
+<form action="/ideas/{{idea.id}}?_method=PUT" method="post">
+  <input type="hidden" name="_method" value="PUT">
+<div class="mb-3">
+  <lable class="form-lable" for="title">Title</lable>
+  <input type="text" name="title" id="title" class="form-control" value="{{idea.title}}">
+</div>
+<div class="mb-3">
+  <lable class="form-lable" for="details">Detailes</lable>
+  <textarea name="details" id="details" class="form-control" >{{idea.details}}</textarea>
+</div>
+<input type="submit" value="Submit" class="btn btn-outline-primary">
+</form>
+</div>

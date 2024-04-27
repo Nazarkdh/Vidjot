@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-6 mx-auto">
+    <div class="card card-body">
+      <img src="/img/logo.png" alt="logo" class="logo">
+      <h3 class="text-center">Account Register</h3>
+      <form action="/users/register" method="post">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="name" name="name" id="name" class="form-control" required value="{{name}}">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" id="email" class="form-control" required value="{{email}}">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label> 
+          <input type="password" name="password" id="password" class="form-control" required value="{{password}}">
+        </div>
+        <div class="mb-3">
+          <label for="password2" class="form-label">Confirm Password</label> 
+          <input type="password" name="password2" id="password2" class="form-control" required value="{{password2}}">
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary">
+      </form>
+    </div>
+  </div>
+</div>
