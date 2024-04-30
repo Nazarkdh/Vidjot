@@ -15,11 +15,11 @@ const users=require('./routes/users');
 
 // load local strategy
 require('./config/passport')(passport);
-
+// load database config
+const db=require("./config/database");
 
 //connect mangodb
-
-mangoose.connect('mongodb://localhost/vidjot-dev')
+mangoose.connect(db.mongoURI)
 .then(()=>console.log('mongodb connected successfully'))
 .then(err=>{
   if(err)console.log(err)
