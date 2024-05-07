@@ -6,7 +6,6 @@ if(process.env.NODE_ENV==='production'){
 }else{
   console.log('2 in Node-env:',process.env.NODE_ENV)
   module.exports={
-    mongoURI:'mongodb+srv://nazarkdh:Deio9UqJDvJo3jHB@vidjots-prod.1ctyjwx.mongodb.net/?retryWrites=true&w=majority'
-    //mongoURI:'mongodb://localhost/vidjot-dev'
+    mongoURI:'mongodb://localhost/vidjot-dev'
   }
 }
